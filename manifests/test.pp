@@ -3,7 +3,7 @@ require homebrew
 require gcc
 
 Exec {
-	group       => 'developers',
+	group       => 'staff',
 	logoutput   => on_failure,
 	user        => $boxen_user,
 	path => [
@@ -24,7 +24,7 @@ Exec {
 }
 
 File {
-    group => 'developers',
+    group => 'staff',
     owner => $boxen_user
 }
 
