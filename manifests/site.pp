@@ -125,7 +125,7 @@ node default {
 			install_options => [
 		        '--with-igbinary'
 			]
-			require => Package['php53', 'php53-igbinary']
+			require => Package['php53-igbinary']
 		}
 
 		package { "mcrypt" :
@@ -134,7 +134,8 @@ node default {
 
 		package { "php53-mcrypt" :
 			ensure => present,
-			require => Package['php53', 'mcrypt']
+			require => Package['php53],
+			require => Package['mcrypt']
 		}
     }
 }
