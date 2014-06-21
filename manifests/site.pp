@@ -124,7 +124,7 @@ node default {
 			ensure => present,
 			install_options => [
 		        '--with-igbinary'
-			]
+			],
 			require => Package['php53-igbinary']
 		}
 
