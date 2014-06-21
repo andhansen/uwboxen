@@ -62,3 +62,4 @@ github "xquartz",     "1.1.1"
 
 github "firefox"
 github "phpstorm"
+github "chrome"
