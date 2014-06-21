@@ -61,5 +61,4 @@ github "xquartz",     "1.1.1"
 # https://github.com/boxen.
 
 github "firefox"
-github "phpstorm"
 github "chrome"

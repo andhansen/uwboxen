@@ -82,7 +82,13 @@ node default {
 
     include firefox
     include chrome
-    include phpstorm
+
+    class virtualbox {
+		package { 'PHPStorm':
+            provider => 'pkgdmg',
+            source   => 'http://download-cf.jetbrains.com/webide/PhpStorm-7.1.3.dmg'
+        }
+    }
 
     class php {
         homebrew::tap { 'josegonzalez/homebrew-php': }
