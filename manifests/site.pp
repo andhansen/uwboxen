@@ -134,7 +134,7 @@ node default {
 
 		package { "php53-mcrypt" :
 			ensure => present,
-			require => Package['php53],
+			require => Package['php53'],
 			require => Package['mcrypt']
 		}
     }
