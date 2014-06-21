@@ -84,12 +84,12 @@ node default {
     include chrome
 }
 
-class PHPStorm {
-	package { 'PHPStorm':
-        provider => 'pkgdmg',
-        source   => 'http://download-cf.jetbrains.com/webide/PhpStorm-7.1.3.dmg'
-    }
+package { 'Gephi':
+	ensure   => installed,
+    source   => 'http://download-cf.jetbrains.com/webide/PhpStorm-7.1.3.dmg',
+    provider => appdmg,
 }
+
 
 class php {
     homebrew::tap { 'josegonzalez/homebrew-php': }
